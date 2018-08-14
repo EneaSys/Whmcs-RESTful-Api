@@ -5,3 +5,8 @@ phpunit.xml
 composer.phar
 composer.lock
 vendor/*
+
+# Eclipse
+.buildpath
+.project
+.settings/

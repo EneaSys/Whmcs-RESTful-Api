@@ -1,27 +1,25 @@
 {
-    "name": "whmcs/sample-addon-module",
-    "description": "Sample Addon Module for WHMCS Billing Automation Platform",
-    "keywords": [
-        "whmcs",
-        "web host automation platform",
-        "addon module"
-    ],
-    "homepage": "http://www.whmcs.com/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "WHMCS Development Team",
-            "email": "development@whmcs.com",
-            "homepage": "http://www.whmcs.com/",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "email": "support@whmcs.com",
-        "forum": "http://forums.whmcs.com/",
-        "wiki": "http://docs.whmcs.com/"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "@stable"
-    }
+	"name" : "Whmcs RESTful Api",
+	"description" : "Addons for expose a RESTful API",
+	"keywords" : [
+		"whmcs",
+		"restful",
+		"api"
+	],
+	"homepage" : "http://wra.eneasys.com/",
+	"authors" : [{
+			"name" : "Eneasys Development Team",
+			"email" : "development@eneasys.com",
+			"homepage" : "http://www.eneasys.com/"
+		}
+	],
+	"support" : {
+		"email" : "support@wra.eneasys.com",
+		"wiki" : "http://wra.eneasys.com/wiki",
+		"source" : "https://github.com/EneaSys/Whmcs-RESTful-Api",
+		"issues" : "https://github.com/EneaSys/Whmcs-RESTful-Api/issues"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "@stable"
+	}
 }
