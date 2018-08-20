@@ -4,8 +4,8 @@
 
 Under creation
 
-http://wra.eneasys.com/
-https://marketplace.whmcs.com/product/4637
+ * http://wra.eneasys.com/
+ * https://marketplace.whmcs.com/product/4637
 
 ## Installation ##
 
@@ -17,6 +17,6 @@ under creation
 
 ## Useful Resources
 * [Open Issue](https://github.com/EneaSys/Whmcs-RESTful-Api/issues)
-* [Documentation](http://wra.eneasys.com/wiki)
+* [Documentation](http://wra.eneasys.com/documentation)
 
 [EneaSys](https://www.eneasys.com)
