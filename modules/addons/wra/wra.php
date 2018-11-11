@@ -19,17 +19,17 @@ function wra_config() {
 			"version" => "0.1.0",
 			"author" => "EneaSys",
 			"fields" => array (
-					"Licenze" => array (
-							"FriendlyName" => "Licenze",
+					"Licence" => array (
+							"FriendlyName" => "Licence",
 							"Type" => "text",
 							"Size" => "25",
-							"Description" => "Licenze of WRA" 
+							"Description" => "Licence of WRA" 
 					),
-					"LicenzeToken" => array (
-							"FriendlyName" => "Licenze Token",
+					"LicenceToken" => array (
+							"FriendlyName" => "Licence Token",
 							"Type" => "text",
 							"Size" => "25",
-							"Description" => "Token of licenze" 
+							"Description" => "Token of licence" 
 					),
 					"AccountForApi" => array (
 							"FriendlyName" => "Account for Api",
@@ -44,9 +44,13 @@ function wra_config() {
 }
 function wra_activate() {
 	try {
+		require_once __DIR__ . '/api/lib.php';
+		$WraAdminManager = new WRA\lib\WraAdminManager();
+		$WraAdminManager->activateLicence($_SERVER['HTTP_HOST'], $_SERVER);
+		
 		return array (
 				'status' => 'success',
-				'description' => $risultato 
+				'description' => 'Module correctly installated'
 		);
 	} catch ( Exception $e ) {
 		echo "Uh oh! {$e->getMessage()}";
@@ -71,9 +75,9 @@ function wra_deactivate() {
 	}
 }
 function wra_output($variables) {
-	print "LICENZE: " . $variables['Licenze'];
+	print "LICENCE: " . $variables['Licence'];
 	print "<br />";
-	print "LICENZE_TOKEN: " . $variables['LicenzeToken'];
+	print "LICENCE_TOKEN: " . $variables['LicenceToken'];
 	print "<br />";
 	print "ACCOUNT_FOR_API: " . $variables['AccountForApi'];
 }
